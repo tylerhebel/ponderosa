@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => 'mysql',
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -48,29 +48,28 @@ return [
 
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => 'storage/database.sqlite',
+            'database' => storage_path('database.sqlite'),
             'prefix'   => '',
         ],
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '',
-            'database'  => 'database',
-            'username'  => 'root',
-            'password'  => '',
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'forge'),
+            'username'  => env('DB_USERNAME', 'forge'),
+            'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
+            'strict'    => false,
         ],
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => 'localhost',
-            'port'     => '',
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
+            'host'     => env('DB_HOST', 'localhost'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
@@ -78,11 +77,11 @@ return [
 
         'sqlsrv' => [
             'driver'   => 'sqlsrv',
-            'host'     => 'localhost',
-            'port'     => '',
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
+            'host'     => env('DB_HOST', 'localhost'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset'  => 'utf8',
             'prefix'   => '',
         ],
 
@@ -95,7 +94,7 @@ return [
     |
     | This table keeps track of all the migrations that have already run for
     | your application. Using this information, we can determine which of
-    | the migrations on disk have not actually be run in the databases.
+    | the migrations on disk haven't actually been run in the database.
     |
     */
 
