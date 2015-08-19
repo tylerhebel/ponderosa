@@ -2,3 +2,6 @@
 1.0.2:
     - Add seasons table
     - create_seasons_table.php
+1.0.3:
+    - Add leagues table
+    - create_leagues_table.php

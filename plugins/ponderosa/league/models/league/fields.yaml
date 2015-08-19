@@ -1,0 +1,28 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        comment: This needs to match the LeagueLeader name (shortname) exactly to pull standings & schedule
+    description:
+        label: Description
+        comment: League Description
+    active:
+        label: Active
+        type: switch
+    season:
+        label: Season
+        type: relation
+        comment: Select season this league belongs to.
+    players_per_team:
+        label: Players Per Team
+        type: dropdown
+        options:
+            1: 1
+            2: 2
+            3: 3
+            4: 4
+            5: 5
+            6: 6

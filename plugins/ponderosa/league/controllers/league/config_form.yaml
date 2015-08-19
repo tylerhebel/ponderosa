@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: League
+
+# Model Form Field configuration
+form: $/ponderosa/league/models/league/fields.yaml
+
+# Model Class name
+modelClass: Ponderosa\League\Models\League
+
+# Default redirect location
+defaultRedirect: ponderosa/league/league
+
+# Create page
+create:
+    title: Create League
+    redirect: ponderosa/league/league/update/:id
+    redirectClose: ponderosa/league/league
+
+# Update page
+update:
+    title: Edit League
+    redirect: ponderosa/league/league
+    redirectClose: ponderosa/league/league
+
+# Preview page
+preview:
+    title: Preview League

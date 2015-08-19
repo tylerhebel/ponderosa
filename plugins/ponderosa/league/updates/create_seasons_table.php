@@ -13,7 +13,7 @@ class CreateSeasonsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
-            $table->boolean('active');
+            $table->boolean('active')->default(false);
             $table->boolean('registration_open');
             $table->timestamps();
         });

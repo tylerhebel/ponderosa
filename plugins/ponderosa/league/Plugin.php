@@ -39,6 +39,11 @@ class Plugin extends PluginBase
                         'icon'        => 'icon-tree',
                         'url'         => \Backend::url('ponderosa/league/season'),
                     ],
+                    'leagues' => [
+                        'label'       => 'All Leagues',
+                        'icon'        => 'icon-tree',
+                        'url'         => \Backend::url('ponderosa/league/league'),
+                    ],
                 ]
             ],
         ];
