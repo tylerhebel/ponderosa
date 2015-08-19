@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Season
+
+# Model Form Field configuration
+form: $/ponderosa/league/models/season/fields.yaml
+
+# Model Class name
+modelClass: Ponderosa\League\Models\Season
+
+# Default redirect location
+defaultRedirect: ponderosa/league/season
+
+# Create page
+create:
+    title: Create Season
+    redirect: ponderosa/league/season/update/:id
+    redirectClose: ponderosa/league/season
+
+# Update page
+update:
+    title: Edit Season
+    redirect: ponderosa/league/season
+    redirectClose: ponderosa/league/season
+
+# Preview page
+preview:
+    title: Preview Season

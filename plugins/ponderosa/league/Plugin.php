@@ -26,13 +26,21 @@ class Plugin extends PluginBase
     public function registerNavigation()
     {
         return [
-            'building' => [
+            'league' => [
                 'label'       => 'Leagues',
-                'url'         => \Backend::url(''),
-                'icon'        => 'icon-gamepad',
+                'url'         => \Backend::url('ponderosa/league/season'),
+                'icon'        => 'icon-tree',
                 //'permissions' => ['vault.parking.*'],
                 'order'       => 500,
-            ]
+
+                'sideMenu' => [
+                    'seasons' => [
+                        'label'       => 'All Seasons',
+                        'icon'        => 'icon-tree',
+                        'url'         => \Backend::url('ponderosa/league/season'),
+                    ],
+                ]
+            ],
         ];
     }
 

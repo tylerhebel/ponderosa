@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+    active:
+        label: Active
+        type: switch
+        comment: When ON, leagues for this season appear to players.  When OFF, leagues for this season do not appear.
+    registration_open:
+        label: Registration Open
+        type: switch
