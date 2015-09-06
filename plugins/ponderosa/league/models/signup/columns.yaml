@@ -1,0 +1,9 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    league_id:
+        label: League
+        type: relation
+#        select: name

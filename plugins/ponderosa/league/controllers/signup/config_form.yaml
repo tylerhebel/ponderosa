@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Signup
+
+# Model Form Field configuration
+form: $/ponderosa/league/models/signup/fields.yaml
+
+# Model Class name
+modelClass: Ponderosa\League\Models\Signup
+
+# Default redirect location
+defaultRedirect: ponderosa/league/signup
+
+# Create page
+create:
+    title: Create Signup
+    redirect: ponderosa/league/signup/update/:id
+    redirectClose: ponderosa/league/signup
+
+# Update page
+update:
+    title: Edit Signup
+    redirect: ponderosa/league/signup
+    redirectClose: ponderosa/league/signup
+
+# Preview page
+preview:
+    title: Preview Signup

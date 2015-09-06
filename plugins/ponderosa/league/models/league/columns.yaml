@@ -3,6 +3,18 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
+    name:
+        label: Name
         searchable: true
+    description:
+        label: Description
+        searchable: true
+    active:
+        label: Active
+        type: switch
+    season:
+        label: Season
+        type: relation
+        select: name
+    players_per_team:
+        label: Players Per Team

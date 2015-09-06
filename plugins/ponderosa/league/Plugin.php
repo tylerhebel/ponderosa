@@ -28,7 +28,7 @@ class Plugin extends PluginBase
         return [
             'league' => [
                 'label'       => 'Leagues',
-                'url'         => \Backend::url('ponderosa/league/season'),
+                'url'         => \Backend::url('ponderosa/league/league'),
                 'icon'        => 'icon-tree',
                 //'permissions' => ['vault.parking.*'],
                 'order'       => 500,
@@ -43,6 +43,19 @@ class Plugin extends PluginBase
                         'label'       => 'All Leagues',
                         'icon'        => 'icon-tree',
                         'url'         => \Backend::url('ponderosa/league/league'),
+                    ],
+                ]
+            ],
+            'signup' => [
+                'label'       => 'Signups',
+                'icon'        => 'icon-tree',
+                'url'         => \Backend::url('ponderosa/league/signup'),
+                'order'       => 501,
+                'sideMenu'    => [
+                    'signups' => [
+                        'label'       => 'All Signups',
+                        'icon'        => 'icon-tree',
+                        'url'         => \Backend::url('ponderosa/league/signup'),
                     ],
                 ]
             ],

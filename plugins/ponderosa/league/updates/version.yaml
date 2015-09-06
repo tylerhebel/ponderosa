@@ -5,3 +5,6 @@
 1.0.3:
     - Add leagues table
     - create_leagues_table.php
+1.0.4:
+    - Add signups table
+    - create_signups_table.php

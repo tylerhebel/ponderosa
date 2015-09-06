@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        league:
+            label: League
+            type: relation
+        team_name:
+            label: Team Name
+        location_name:
+            label: Location Name

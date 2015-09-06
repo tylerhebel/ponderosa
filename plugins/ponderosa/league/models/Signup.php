@@ -4,16 +4,16 @@ use Model;
 use October\Rain\Database\Traits\Validation;
 
 /**
- * League Model
+ * Signup Model
  */
-class League extends Model
+class Signup extends Model
 {
     use Validation;
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'ponderosa_league_leagues';
+    public $table = 'ponderosa_league_signups';
 
     /**
      * @var array Guarded fields
@@ -29,19 +29,16 @@ class League extends Model
      * @var array Validation rules
      */
     public $rules = [
-        'name' => 'required',
-        'description' => 'required',
-        'players_per_team' => 'required',
-        'season_id' => 'required',
+        'league' => 'required',
+        'team_name' => 'required',
+        'location_name' => 'required',
     ];
 
     /**
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [
-        'signups' => ['Ponderosa\League\Models\Signup'],
-    ];
+    public $hasMany = [];
     public $belongsTo = [
         'league' => ['Ponderosa\League\Models\League'],
     ];
